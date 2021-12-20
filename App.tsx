@@ -9,6 +9,7 @@ import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhan
 import { SignIn } from './src/screens/Signin';
 import { StatusBar } from 'react-native';
 import { Background } from './src/components/Background';
+import { Home } from './src/screens/Home';
 
 export default function App() {
 
@@ -31,7 +32,8 @@ export default function App() {
         translucent
       />
 
-      <SignIn />
+      {/* <SignIn /> */}
+      <Home/>
     </Background>
   );
 }
