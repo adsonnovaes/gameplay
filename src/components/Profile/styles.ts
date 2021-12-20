@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
   },
   user: {
     flexDirection: 'row',
+    alignItems: 'center'
   },
   greeting: {
     fontFamily: theme.fonts.text500,
