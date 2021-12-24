@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, FlatList } from 'react-native';
 import { Appointment } from '../../components/Appointments';
+import { Background } from '../../components/Background';
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { CategorySelect } from '../../components/CategorySelect';
 import { ListDivider } from '../../components/ListDivider';
@@ -45,7 +46,7 @@ export function Home() {
   }
 
   return (
-    <View>
+    <Background>
       <View style={styles.header}>
         <Profile />
         <ButtonAdd />
@@ -77,6 +78,6 @@ export function Home() {
 
       </View>
 
-    </View>
+    </Background>
   );
 }
