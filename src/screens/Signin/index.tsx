@@ -1,5 +1,6 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+
 import {
   Text,
   View,
@@ -10,12 +11,13 @@ import illustration from '../../assets/illustration.png';
 import { Background } from '../../components/Background';
 import { ButtonIcon } from '../../components/ButtonIcon';
 
+import { useAuth } from '../../hooks/auth';
 import { styles } from './styles';
-
 
 export function SignIn() {
 
   const navigation = useNavigation();
+  const { user } = useAuth();
 
   function handleSignIn() {
     //@ts-ignore
