@@ -50,7 +50,7 @@ export function Home() {
 
   useFocusEffect(useCallback(() => {
     loadAppointment();
-  }, [category]))
+  }, [category]));
 
   return (
     <Background>
